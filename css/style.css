@@ -153,6 +153,7 @@ button:hover {
   font-size: 14px;
   color: #bababa;
   padding: 13px 30px 15px 30px;
+  margin-top: -2px;
 }
 .header-top-inner {
   display: flex;
