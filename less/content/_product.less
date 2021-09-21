@@ -1,9 +1,9 @@
-.products-list{
+.products-list {
     margin-bottom: 28px;
     .title{
         margin-bottom: 74px;
         position: relative;
-        &::before{
+        &::before {
             content:'';
             width: 50px;
             height: 1px;
@@ -12,31 +12,32 @@
             left:0;
             bottom: -24px;
         }
-        .h2{
+        .h2 {
             margin-top: 11px;
         }
     }
     .product{
-        &-items{
+        &-items {
             width: calc( 100% / 12 * 3 );
         }
-        &-inner{
+        &-inner {
             margin-bottom: 43px;
-            .product-image{
+            .product-image {
                 position: relative;
                 display:flex;
-                img{
+                img {
                     width: 100%;
                 }
-                .btn-cart{
+                .btn-cart {
                     position: absolute;
                     left:5px;
                     bottom: 5px;
+                    //118 40
                     a{
                         color: #424242;
                         font-size: 12px;
                         font-weight: 400;
-                        padding: 15px 20px 14px;
+                        padding: 15px 17px 13px;
                         background: #fff;
                         text-transform: uppercase;
                         display: block;
@@ -46,13 +47,14 @@
                     }
                 }
             }
-            .product-title{
+            .product-title {
                 font-size: 14px;
+                font-weight: bold;
                 line-height: 26px;
                 color:#000;
                 margin-top: 10px;
             }
-            .product-review{
+            .product-review {
                 display: flex;
                 margin-top: 7px;
                 i{
@@ -60,48 +62,20 @@
                     color:#f8ba04;
                 }
             }
-            .product-price{
+            .product-price {
                 font-family:'OpenSans';
                 font-size: 16px;
                 line-height: 26px;
                 margin-top: 6px;
-                &-old{
+                &-old {
                     color:#999;
                     font-weight: 400;
                     text-decoration: line-through;
                 }
-                &-sale{
+                &-sale {
                     color:@main-color;
                     font-weight: 700; 
                 }
-            }
-        }
-    }
-}
-//// RESPONSIVE///////////////
-@media screen and ( max-width: 1024px) {
-    .products-list{
-        .product{
-            &-items{
-                width: calc( 100% / 12 * 3);
-            }
-        }
-    }
-}
-@media screen and ( max-width: 600px) {
-    .products-list{
-        .product{
-            &-items{
-                width: 50%;
-            }
-        }
-    }
-}
-@media screen and ( max-width: 480px) {
-    .products-list{
-        .product{
-            &-items{
-                width: 100%;
             }
         }
     }

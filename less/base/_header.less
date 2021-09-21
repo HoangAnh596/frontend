@@ -5,14 +5,12 @@
         font-size: 14px;
         color: @title-header;
         padding: 13px 30px 15px 30px;
-        
         &-inner {
             display: flex;
             font-family: 'OpenSans';
             justify-content: space-between;
             .web-info {
                 display: flex;
-                
                 &-buttom {
                     display: flex;
                 }
@@ -23,9 +21,14 @@
             .web-sm {
                 margin-left: 30px;
                 display: flex;
+                a {
+                    color: @title-header;
+                }
+                a:hover {
+                    color: @main-color;
+                }
                 &-buttom {
                     margin-left: 30px;
-                    display: flex;
                 }
                 .info-content{
                     margin-left: 5px;
@@ -108,7 +111,6 @@
     }
 
 }
-// ------- Navbar ------------
 @media screen and (max-width: 1270px){
     .navbar{
         padding: 20px 15px;
