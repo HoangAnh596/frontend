@@ -488,7 +488,7 @@ button:hover {
 }
 .banner-right-content-up .fix-position {
   left: 57px;
-  padding-top: 28px;
+  padding-top: 32px;
 }
 .banner-right-content-down {
   position: relative;
@@ -498,6 +498,9 @@ button:hover {
 }
 .banner img {
   width: 100%;
+}
+.banner .text-content .text {
+  font-weight: bold;
 }
 .banner .text-content .title {
   font-size: 16px;
