@@ -337,7 +337,7 @@ button:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  .header {
+  .header-top {
     padding: 15px 15px;
   }
   .header-top-inner .web-info .info-content {
@@ -348,7 +348,7 @@ button:hover {
   }
 }
 @media screen and (max-width: 576px) {
-  .header {
+  .header-top {
     padding: 15px 15px;
   }
   .header-top-inner .web-info .info-content {
@@ -359,7 +359,7 @@ button:hover {
   }
 }
 @media screen and (max-width: 480px) {
-  .header {
+  .header-top {
     padding: 15px 15px;
   }
   .header-top-inner .web-info .info-content {
