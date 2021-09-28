@@ -337,6 +337,9 @@ button:hover {
   }
 }
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 15px 15px;
+  }
   .header-top-inner .web-info .info-content {
     display: none;
   }
@@ -345,6 +348,9 @@ button:hover {
   }
 }
 @media screen and (max-width: 576px) {
+  .header {
+    padding: 15px 15px;
+  }
   .header-top-inner .web-info .info-content {
     display: none;
   }
@@ -353,7 +359,11 @@ button:hover {
   }
 }
 @media screen and (max-width: 480px) {
+  .header {
+    padding: 15px 15px;
+  }
   .header-top-inner .web-info .info-content {
+    width: 100%;
     display: none;
   }
   .header-top-inner .info-content {
