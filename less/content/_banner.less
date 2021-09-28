@@ -1,25 +1,28 @@
-.banner{
+.banner {
     width: 100%;
     margin-bottom: 72px;
-    &-left{
+    &-left {
         width: calc( 100% / 12 * 8);
-        &-content{
+        &-content {
             position: relative;
-            .text-content{
+            .text-content {
                 position: absolute;
                 bottom: 28%;
                 right: 13%;
                 text-align: right;
-                .text{
+                margin-right: -2px;
+                margin-top: 1px;
+                .text {
                     font-family: 'Pacifico';
                     color: @cl-black;
                     font-size: 30px;
-                    
+                    margin-bottom: 3px;
+                    font-weight: bold;
                 }
             }
         }
     }
-    &-right{
+    &-right {
         width: calc( 100% / 12 * 4);
         .fix-position{
             position: absolute;
@@ -27,11 +30,11 @@
             left: 38px;
             top: 50%;
         }
-        &-content{
+        &-content {
             display: flex;
             flex-direction: column;
             row-gap: 30px;
-            &-up{
+            &-up {
                 position: relative;
                 display: flex;
                 .fix-position{
@@ -39,7 +42,8 @@
                     padding-top: 32px;
                 }   
             }
-            &-down{
+            &-down {
+                margin-left: 2px;
                 position: relative;
                 .fix-position{
                     padding-top: 7px;
@@ -50,18 +54,15 @@
     img{
         width: 100%;
     }
-    .text-content{
-        .text {
-            font-weight: bold;
-        }
-        .title {
+    .text-content {
+        .title{
             font-size: 16px;
             color: #616161;
             letter-spacing: 3px;
             line-height: 20px;
             text-transform: uppercase;
         }
-        .description{
+        .description {
             font-size: 20px;
             text-transform: uppercase;
             color: @cl-black;
@@ -69,7 +70,7 @@
             margin-bottom: 15px;
 
         }
-        .shop-now{
+        .shop-now {
             padding: 13px 17px;
             display: inline-block;
             color:#fff;
@@ -85,3 +86,81 @@
 }
 
 
+@media screen and (max-width: 1024px){
+    .banner{
+        &-left{
+            &-content{
+                .text{
+                    font-size: 20px;
+                }
+            }
+        }
+        &-right{
+            &-content{
+                .fix-position{
+                    left: 30px;
+                    .title{
+                        font-size: 14px;;
+                    }
+                    .description{
+                        font-size: 16px;;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .banner{
+        margin-bottom: 40px;
+        &-left{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        &-right{
+            width: 100%;
+            &-content{
+                flex-direction: row;
+                margin: 0 -15px;
+                .flex{
+                    width: 50%;
+                    padding: 0 15px;;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .banner{
+        &-right{
+            &-content{
+                width: 100%;
+                flex-direction: column;
+                .flex{
+                    width: 100%;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px ) and (min-width: 481px){
+    .banner{
+        &-right{
+            &-content{
+                &-down{
+                    .banner-right-down-inner{
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        img{
+                            position: absolute;
+                            top:0;
+                            left:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

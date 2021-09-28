@@ -1,29 +1,30 @@
-.footer{
+.footer {
+    margin-top: 1px;
     background-color: #222;
     color: @footer-color;
-    a{
+    a {
         color: @footer-color;
     }
-    &-top{
+    &-top {
         padding: 60px 0 40px 0;
-        .about-us{
+        .about-us {
             width: calc( 100% / 12 * 3);
-            .social-icon{
+            .social-icon {
                 margin-top: 44px;
                 a:hover {
                     color: #fff;
                 }
-                i {  
-                    margin-right: 16px;
+                i{
+                    margin-right: 30px;
                     font-size: 14px;
-                }      
+                }
             }
-            .items-title{
+            .items-title {
                 margin-bottom: 22px;
             }
         }
-        .menu{
-            .items-title{
+        .menu {
+            .items-title {
                 max-width: 360px;
             }
             padding-left: 9.6%;
@@ -37,12 +38,12 @@
                 }
             }
         }
-        .location{
+        .location {
             width: calc( 100% / 12 * 3);
             .items-detail{
                 line-height: 33px;
                 .flex{
-                    a {
+                    a{
                         &:hover{
                             color: #fff;
                             text-decoration: underline;
@@ -54,7 +55,7 @@
         &-items {
             padding: 0 15px;
             box-sizing: border-box;
-            .items-title {
+            .items-title{
                 color: #f7f7f7;
                 padding-bottom: 26px;
                 margin-bottom: 20px;
@@ -65,19 +66,20 @@
                 font-size: 14px;
                 line-height: 22px;
                 letter-spacing: 0.3px;
-                a {
-                    i {
-                        padding-right: 15px;
-                    }
-                } 
-
+                .icon{
+                    margin-right: 15px;
+                }
+                .email .description{
+                    word-break: break-all;
+                }
+                
             }
             .footer-nav {
                 display: flex;
-                ul {
-                    li {
+                ul{
+                    li{
                         line-height: 30px;
-                        a:hover {
+                        a:hover{
                             color:#fff;
                             text-decoration: underline;
                         }
@@ -88,7 +90,7 @@
 
 
     }
-    &-bottom{
+    &-bottom {
         border-top: 1px solid @border-footer;
         padding: 23px 0;
 
@@ -111,4 +113,73 @@
         }
     }
 }
-
+//////////////// RESPONSIVE/////////////////////////////////////////////////
+@media screen and (max-width: 768px){
+    .footer{
+        &-top{
+            &-items{
+                &:first-child{
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+                &.menu{
+                    padding-left: 15px;
+                }
+                &.location{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .footer{
+        &-top{
+            padding:20px 15px;
+            &-items{
+                padding: 0;
+                &.menu, &.location{
+                    padding: 0;
+                    width: 100%;
+                }
+                &:first-child{
+                    margin-bottom: 0;
+                }
+                .items-detail{
+                    display: none;
+                    padding-bottom: 30px;
+                    &.active{
+                        display: block;
+                    }
+                    .social-icon{
+                        margin-top: 15px;
+                    } 
+                }
+                .items-title{
+                    padding-bottom: 15px;
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        &-bottom{
+            &-inner{
+                justify-content: center;
+            }
+            &-left{
+            text-align: center;
+            }
+            &-right{
+                order: -1;
+                margin-bottom: 15px;
+                a{
+                    display: inline-block;
+                }
+            }
+       }
+    }
+}
+    

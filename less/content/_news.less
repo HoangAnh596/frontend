@@ -1,14 +1,15 @@
-.news{
+.news {
     padding: 78px 0 88px 0;
     background-image: url('../img/bg-news.png');
-    .title{
+    .title {
         text-align: center;
         margin-bottom: 73px;
         position: relative;
-        .h4{
+        .h4 {
             margin-bottom: 11px;
+            margin-left: 4px;
         }
-        &::before{
+        &::before {
             content:'';
             width: 50px;
             height: 1px;
@@ -20,18 +21,18 @@
 
         }
     }
-    &-slider{
+    &-slider {
         margin: 0 -15px;
-        .news-content{
+        .news-content {
             padding: 0 15px;
 
-            &-image{
+            &-image {
                 position: relative;
                 // margin-bottom: 16px;
-                img{
+                img {
                     width: 100%;
                 }
-                .dating{
+                .dating {
                     position: absolute;
                     top: 23px;
                     left: 20px;
@@ -40,7 +41,7 @@
                     background-color: #a1d1dd;
                     box-sizing: border-box;
                     padding: 5px;
-                    &-inner{
+                    &-inner {
                         border: 1px solid #fff;
                         box-sizing: border-box;
                         width: 50px;
@@ -50,21 +51,22 @@
                         justify-content: center;
                         align-items: center;
                         color:#fff;
-                        .month{
+                        .month {
                             font-size: 14px;
                         }
-                        .date{
+                        .date {
                             font-size: 16px;
                             font-weight: 700;
                         }
                     }
                 }
             }
-            &-text{
+            &-text {
                 background-color: #fff;
-                padding-top: 19px;
+                padding-top: 21px;
             }
-            &-title{
+            &-title {
+                margin-top: -2px;
                 font-size: 16px;
                 line-height: 20px;
                 font-weight: 400;
@@ -102,5 +104,11 @@
                 }
             }
         }
+    }
+}
+///////// Responaive
+@media screen and (max-width: 480px){
+    .news{
+        padding: 40px 0;
     }
 }
