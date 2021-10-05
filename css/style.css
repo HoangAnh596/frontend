@@ -336,31 +336,38 @@ button:hover {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
-  .header-top {
-    padding: 15px 15px;
-  }
-  .header-top-inner .web-info .info-content {
-    display: none;
-  }
-  .header-top-inner .info-content {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  .header-top {
-    padding: 15px 15px;
-  }
-  .header-top-inner .web-info .info-content {
-    display: none;
-  }
-  .header-top-inner .info-content {
-    margin-left: 0;
-  }
-}
 @media screen and (max-width: 480px) {
   .header-top {
     padding: 15px 15px;
+  }
+  .header-top-inner .web-info .info-content {
+    width: 100%;
+    display: none;
+  }
+  .header-top-inner .info-content {
+    margin-left: 0;
+  }
+  .navbar .logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .navbar-center {
+    width: auto;
+  }
+  .navbar-center nav ul {
+    width: 70vw;
+  }
+  .navbar-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .navbar-right .items-icon:first-child i {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header-top-inner .web-info {
+    width: 100%;
   }
   .header-top-inner .web-info .info-content {
     width: 100%;
@@ -561,7 +568,7 @@ button:hover {
   bottom: 28%;
   right: 13%;
   text-align: right;
-  margin-right: -2px;
+  margin-right: -4px;
   margin-top: 1px;
 }
 .banner-left-content .text-content .text {
@@ -570,6 +577,17 @@ button:hover {
   font-size: 30px;
   margin-bottom: 3px;
   font-weight: bold;
+}
+.banner-left-content .text-content .shop-now {
+  padding: 13px 17px;
+  display: inline-block;
+  color: #fff;
+  box-sizing: border-box;
+  background-color: #8262b5;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  margin-left: 3px;
 }
 .banner-right {
   width: calc(100% / 12 * 4);
@@ -602,6 +620,17 @@ button:hover {
 .banner-right-content-down .fix-position {
   padding-top: 7px;
 }
+.banner-right-content-down .shop-now {
+  padding: 13px 18px;
+  display: inline-block;
+  color: #fff;
+  box-sizing: border-box;
+  background-color: #8262b5;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  margin-left: 2px;
+}
 .banner img {
   width: 100%;
 }
@@ -618,17 +647,6 @@ button:hover {
   color: #000;
   font-weight: 700;
   margin-bottom: 15px;
-}
-.banner .text-content .shop-now {
-  padding: 13px 17px;
-  display: inline-block;
-  color: #fff;
-  box-sizing: border-box;
-  background-color: #8262b5;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  margin-left: 3px;
 }
 @media screen and (max-width: 1024px) {
   .banner-left-content .text {
@@ -665,6 +683,7 @@ button:hover {
   }
 }
 @media screen and (max-width: 480px) {
+  width: 100%;
   .banner-right-content {
     width: 100%;
     flex-direction: column;
@@ -722,7 +741,7 @@ button:hover {
 .products-list .product-inner .product-image .btn-cart {
   position: absolute;
   left: 5px;
-  bottom: 4px;
+  bottom: 5px;
 }
 .products-list .product-inner .product-image .btn-cart a {
   color: #424242;
@@ -776,6 +795,7 @@ button:hover {
   }
 }
 @media screen and (max-width: 480px) {
+  width: 100%;
   .products-list .product-items {
     width: 100%;
   }
@@ -886,6 +906,7 @@ button:hover {
   padding-right: 2px;
 }
 @media screen and (max-width: 480px) {
+  width: 100%;
   .news {
     padding: 40px 0;
   }
