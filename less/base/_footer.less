@@ -66,20 +66,66 @@
                 font-size: 14px;
                 line-height: 22px;
                 letter-spacing: 0.3px;
-                .icon{
-                    margin-right: 15px;
+                // .icon{
+                //     margin-right: 15px;
+                // }
+                .flex {
+                    i {
+                        margin-right: 15px;
+                    }
                 }
-                .email .description{
+                .address {
+                    a {
+                        display: flex;
+                        i {
+                            padding-top: 8px;
+                            padding-left: 1px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                    
+                }
+                .phone-number {
                     word-break: break-all;
+                    a {
+                        display: flex;
+                        i {
+                            padding-top: 8px;
+                            padding-left: 1px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
                 }
+                .email {
+                    word-break: break-all;
+                    a {
+                        display: flex;
+                        i {
+                            padding-top: 10px;
+                            padding-left: 1px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                    
+                }
+                // .email .description {
+                //     word-break: break-all;
+                // }
                 
             }
             .footer-nav {
                 display: flex;
-                ul{
-                    li{
+                ul {
+                    li {
                         line-height: 30px;
-                        a:hover{
+                        margin-bottom: 0.5px;
+                        a:hover {
                             color:#fff;
                             text-decoration: underline;
                         }

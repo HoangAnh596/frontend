@@ -152,26 +152,27 @@
         }
     }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     width: 100%;
-    .banner{
-        &-right{
-            &-content{
-                width: 100%;
+    .banner {
+        &-right {
+            &-content {
                 flex-direction: column;
-                .flex{
-                    width: 100%;
+                .flex {
                     padding: 0 15px;
+                    .text-content {
+                        margin-left: -14px;
+                    }
                 }
             }
         }
     }
 }
-@media screen and (max-width: 600px ) and (min-width: 481px){
-    .banner{
-        &-right{
-            &-content{
-                &-down{
+@media screen and (max-width: 600px ) and (min-width: 481px) {
+    .banner {
+        &-right {
+            &-content {
+                &-down {
                     .banner-right-down-inner{
                         width: 100%;
                         position: relative;
